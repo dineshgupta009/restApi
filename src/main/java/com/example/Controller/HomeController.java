@@ -22,7 +22,7 @@ public class HomeController {
     EmployeeRepository employeeRepository;
     @GetMapping("/employee")
     public List<Employee> getEmployee(){
-        return employeeService.getEmployees();
+        return employeeService.getEmployees();;
     }
 
     @GetMapping("/employees/{id}")
